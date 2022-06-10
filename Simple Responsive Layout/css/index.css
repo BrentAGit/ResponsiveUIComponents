@@ -1,0 +1,122 @@
+/* Responsive flexbox practice following https://youtu.be/bn-DQCifeQQ as reference */
+
+:root {
+  --clr-primary-light: #F3EED9;
+  --clr-primary-accent: #824936;
+  --clr-primary-dark: #222C2A;
+  --clr-neutral: #FFF;
+
+  --ff-primary: "Roboto", sans-serif;
+  --ff-accent: "Playfair Display", sans-serif;
+}
+
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Typography */
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-primary-accent);
+  font-family: var(--ff-accent);
+  font-weight: 900;
+  line-height: 1;
+}
+
+/* Layout */
+
+h2,
+h3,
+p {
+  margin-bottom: 1em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+header,
+section {
+  padding: 4rem 0;
+}
+
+@media (min-width: 40em) {
+  header,
+  section {
+    padding: 7rem 0;
+  }
+}
+
+.main-header {
+  max-width: 34rem;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  width: min(90%, 70.5rem);
+}
+
+.bg-light {
+  background-color: var(--clr-primary-light);
+}
+
+.bg-accent {
+  background-color: var(--clr-primary-accent);
+  color: var(--clr-neutral);
+}
+
+.bg-dark {
+  background-color: var(--clr-primary-dark);
+  color: var(--clr-neutral);
+}
+
+.bg-accent h2,
+.bg-dark h2 {
+  color: var(--clr-primary-light);
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 40em) {
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 2em;
+  }
+}
+
+
