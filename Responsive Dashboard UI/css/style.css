@@ -138,9 +138,6 @@ main {
     border: 1px solid white;
 }
 
-
-/* Your Fixes Below */
-
 body {
     background: #303A52;
     font-family: 'Nunito', sans-serif;
@@ -188,9 +185,6 @@ nav {
     padding: .5em 1em;
     margin-bottom: 2em;
 }
-
-
-/* Large Phones */
 
 @media (min-width: 420px) {
     body {
@@ -293,33 +287,4 @@ nav {
         font-size: 4em;
         margin-top: 0; 
     }
-}
-
-
- /*
-
-- White Space
-- Color 
-- Contrast 
-- Scale
-- Alignment
-- Typography
-- Visual Hierarchy
-
-*/
-
-
-
-/* Ignore this -- for displaying the viewport width */
-.width-container {
-    display: none;
-}
-.display-width {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: #E6E6E6;
-    padding: .3em;
-    font-size: .85em;
 }
